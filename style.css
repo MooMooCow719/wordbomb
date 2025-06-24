@@ -1,17 +1,29 @@
 html{
     font-family: 'Courier New', Courier, monospace;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
+    color:darkslategrey;
 }
 
 #header-bar{
     top: 0px;
     background-color: antiquewhite;
-    color:darkslategrey;
     width: 100vw;
     height: 10vh;
+    overflow: hidden;
+}
+
+#title{
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#game-page{
+    display: none;
+}
+
+#result-page{
+    display:none;
 }

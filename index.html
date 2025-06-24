@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+
+
         <div id="header-bar">
             <div id="title">
                 <h1 id="title-text">Word Bomb</h1>
@@ -14,18 +16,41 @@
                 <button type="button">i</button>
             </div>
         </div>
+
+
         <div id="start-page">
             <h1 id="instructions">Choose a difficulty to get started:</h1>
-            <button type="button" id="easy-button" title="20 seconds per word, 1000 most common prompts">Easy</button>
-            <button type="button" id="med-button" title="15 seconds per word, 2000 most common prompts">Normal</button>
-            <button type="button" id="hard-button" title="10 seconds per word, 5000 most common prompts">Hard</button>
+            <button type="button" class="diffbutton" id="easy-button" title="20 seconds per word, 1000 most common prompts">Easy</button>
+            <button type="button" class="diffbutton" id="med-button" title="15 seconds per word, 2000 most common prompts">Normal</button>
+            <button type="button" class="diffbutton" id="hard-button" title="10 seconds per word, 5000 most common prompts">Hard</button>
         </div>
+
+
         <div id="game-page">
-
+            <div id="game-header">
+                <div id="timers">
+                    <h1 id="elapsed">Session time:</h1>
+                    <h1 id="countdown">Time remaining:</h1>
+                </div>
+                <div id="scores">
+                    <h1 id="lives">Lives remaining:</h1>
+                    <h1 id="basic-score">Words correct:</h1>
+                    <h1 id="true-score">True score:</h1>
+                </div>
+            </div>
+            <h1 id="game-instructions">Type an English word containing :</h1>
+            <input type="text" id="answer-box" placeholder="Enter word here..." required minlength="3" maxlength="50" size="50">
         </div>
+
+
         <div id="result-page">
-
+            <h1>Congratulations! Your final scores are:</h1>
+            <h1 id="basic-score-result">Words correct:</h1>
+            <h1 id="true-score-result">True score:</h1>
+            <h1>Reload the page to play again!</h1>
         </div>
+
+
         </body>
     </body>
 </html>
