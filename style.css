@@ -5,11 +5,12 @@ html{
 }
 
 #header-bar{
-    top: 0px;
     background-color: antiquewhite;
     width: 100vw;
     height: 10vh;
     overflow: hidden;
+    padding: 0px;
+    margin: 0px;
 }
 
 #title{
