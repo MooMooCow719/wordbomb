@@ -1,3 +1,14 @@
-h1{
-    color: azure;
+html{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#header-bar{
+    background-color: antiquewhite;
+    color:darkslategrey;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
