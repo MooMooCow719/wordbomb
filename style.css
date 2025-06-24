@@ -1,8 +1,11 @@
 html{
     font-family: 'Courier New', Courier, monospace;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 #header-bar{
+    top: 0px;
     background-color: antiquewhite;
     color:darkslategrey;
     width: 100vw;
