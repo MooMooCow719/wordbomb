@@ -151,6 +151,11 @@ html{
     font-size: 5vh;
     background-color:white;
     color: black;
+    outline: none;
+}
+
+#answer-box:focus{
+    outline:none;
 }
 
 #result-page{
