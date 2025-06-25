@@ -5,53 +5,69 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Word Bomb</title>
         <link rel="stylesheet" href="style.css">
-        <!---<script src="app.js"></script>--->
+        <script src="app.js" defer></script>
     </head>
     <body>
 
 
         <div id="header-bar">
             <div id="title">
-                <h1 id="title-text">Word Bomb</h1>
-                <h1 id="credits">Made by MooMooCow719</h1>
-                <button type="button">i</button>
+                <div class="left">
+                    <h1 id="title-text" onclick="location.reload()" style="cursor: pointer;">Word Bomb</h1>
+                </div>
+                <div class="right">
+                    <h1 id="credits">Made by MooMooCow719</h1>
+                </div>
             </div>
         </div>
 
 
         <div id="start-page">
-            <h1 id="instructions">Choose a difficulty to get started:</h1>
-            <button type="button" class="diffbutton" id="easy-button" title="20 seconds per word, 1000 most common prompts">Easy</button>
-            <button type="button" class="diffbutton" id="med-button" title="15 seconds per word, 2000 most common prompts">Normal</button>
-            <button type="button" class="diffbutton" id="hard-button" title="10 seconds per word, 5000 most common prompts">Hard</button>
+            <div id="start-box">
+                <h1 id="instructions">Choose a difficulty to get started:</h1>
+                <button type="button" class="diffbutton" id="easy-button" title=", 1x score multipler, 20 seconds per word, 500 most common prompts">Easy</button>
+                <button type="button" class="diffbutton" id="med-button" title="1.5x score mulitpler, 15 seconds per word, 1500 most common prompts">Normal</button>
+                <button type="button" class="diffbutton" id="hard-button" title="2x score multipler, 10 seconds per word, 5000 most common prompts">Hard</button>
+
+            <div id="lives-box">
+                <button type="button" class="livesbutton" id="five-lives" title="Start with 5 lives">5 lives</button>
+                <button type="button" class="livesbutton" id="three-lives" title="Start with 3 lives, but gain a 1.5x multipler to true score">3 lives</button>
+            </div>
+            <button type="button" id="start-button" disabled>START</button>
+            </div>
         </div>
 
 
         <div id="game-page">
             <div id="game-header">
-                <div id="timers">
-                    <h1 id="elapsed">Session time:</h1>
+                <div id="timers" class="left">
+                    <h1 id="session-time">Session time: 00:00</h1>
                     <h1 id="countdown">Time remaining:</h1>
                 </div>
-                <div id="scores">
-                    <h1 id="lives">Lives remaining:</h1>
+                <div id="scores" class="left">
+                    <h1 id="lives">Lives remaining: 0</h1>
                     <h1 id="basic-score">Words correct:</h1>
                     <h1 id="true-score">True score:</h1>
                 </div>
             </div>
-            <h1 id="game-instructions">Type an English word containing :</h1>
-            <input type="text" id="answer-box" placeholder="Enter word here..." required minlength="3" maxlength="50" size="50">
+            <div id="response-container">
+                <h1 id="game-instructions">Type an English word containing </h1>
+                <input type="text" id="answer-box" required minlength="3" maxlength="50" size="50">
+                <p id="result"></p>
+            </div>
         </div>
 
 
         <div id="result-page">
-            <h1>Congratulations! Your final scores are:</h1>
-            <h1 id="basic-score-result">Words correct:</h1>
-            <h1 id="true-score-result">True score:</h1>
-            <h1>Reload the page to play again!</h1>
+            <div id="results-container">
+                <h1>Congratulations! Your final scores are:</h1>
+                <h1 id="basic-score-result">Words correct: </h1>
+                <h1 id="true-score-result">True score: </h1>
+                <h1 id="time-result">You survived for </h1>
+                <h1>Click the icon to play again!</h1>
+            </div>
         </div>
+        
 
-
-        </body>
     </body>
 </html>

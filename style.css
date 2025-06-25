@@ -1,25 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*border: solid 2px black;*/
+}
+
+body{
+    background-color: azure;
+
+}
 html{
     font-family: 'Courier New', Courier, monospace;
     overflow: hidden;
     color:darkslategrey;
 }
 
+/* START OF HEADER BAR CSS */ 
 #header-bar{
     background-color: antiquewhite;
     width: 100vw;
     height: 10vh;
-    overflow: hidden;
-    padding: 0px;
-    margin: 0px;
+    display: flex;
+    font-size: 3vh;
+    border: solid 2px black;
 }
 
 #title{
+    width: 100vw;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
     overflow-x: hidden;
 }
+
+.left{
+    flex-wrap: nowrap;
+    margin-left: 2vw;
+}
+
+.right{
+    flex-wrap: nowrap;
+    margin-right: 2vw;
+}
+
+/* END OF HEADER BAR CSS */
+
+#start-page{
+    width: 100vw;
+    height: 90vh;
+    border: solid 2px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#start-box{
+    font-size:2vh;
+    border: solid 2px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    gap: 5vh;
+    padding: 2vh;
+    background-color: white;
+}
+
+.diffbutton{
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#lives-box{
+    display: flex;
+}
+
+.livesbutton{
+    padding: 15px 30px;
+    font-size: 16px;
+    color: black;
+    background-color: lightgrey;
+    border: none;
+    cursor: pointer;
+    border: solid 1px black;
+}
+
+#start-button{
+    padding: 20px 40px;
+    font-size: 22px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border: solid 1px black;
+}
+
+#easy-button{
+    background-color: green;
+}
+
+#med-button{
+    background-color: gold;
+}
+
+#hard-button{
+    background-color: crimson;
+}
+
+/* START OF GAME CSS */
+
+#game-header{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#timers{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
+    padding-top: 2vh;
+}
+
+#scores{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5vw;
+}
+
+#response-container{
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 7vh;
+    padding-bottom: 30vh;
+    align-items: center;
+}
+
+#answer-box{
+    margin-top: 0px;
+    width: 50vw;
+    height: 15vh;
+    font-size: 5vh;
+    background-color:white;
+    color: black;
+}
+
+#result-page{
+    width:100vw;
+    height:90vh;
+    display:flex;
+    padding-top:20vh;
+    padding-bottom:20vh;
+    padding-left:25vw;
+    padding-right:25vw;
+}
+
+#results-container{
+    background-color: aliceblue;
+    border: solid 1px black;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: space-between;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    width: 50vw;
+    height:50vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #game-page{
     display: none;
