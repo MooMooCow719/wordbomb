@@ -157,6 +157,7 @@ html{
 
 #answer-box:focus{
     outline:none;
+    border: solid 1px black;
 }
 
 #result-page{
