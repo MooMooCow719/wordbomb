@@ -152,6 +152,7 @@ html{
     background-color:white;
     color: black;
     outline: none;
+    border: solid 1px black;
 }
 
 #answer-box:focus{
